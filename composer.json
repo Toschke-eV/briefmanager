@@ -1,0 +1,21 @@
+{
+	"name": "briefpapier/briefmanager",
+	"description": "Universal Nextcloud Briefmanager (letterhead suite)",
+	"license": "AGPL-3.0-or-later",
+	"autoload": {
+		"psr-4": {
+			"OCA\\BriefManager\\": "lib/"
+		}
+	},
+	"require": {
+		"php": ">=8.1",
+		"setasign/fpdi": "^2.6",
+		"tecnickcom/tcpdf": "^6.7"
+	},
+	"config": {
+		"platform": {
+			"php": "8.1"
+		},
+		"sort-packages": true
+	}
+}

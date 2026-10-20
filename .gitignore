@@ -1,0 +1,16 @@
+.DS_Store
+._*
+*.key
+*.csr
+*.crt
+*.pem
+.env
+.env.*
+secrets/
+dist/
+*.zip
+*.tar.gz
+*.phar
+vendor/tecnickcom/tcpdf/fonts/freefont*
+vendor/tecnickcom/tcpdf/tools/
+vendor/tecnickcom/tcpdf/examples/

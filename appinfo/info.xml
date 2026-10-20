@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<info xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>briefmanager</id>
+	<name>Briefmanager</name>
+	<summary lang="de">Universelle Briefe-App mit Briefpapier-Designs für Vereine und Organisationen</summary>
+	<summary lang="en">Universal letter app with letterhead designs for clubs and organisations</summary>
+	<description lang="de"><![CDATA[
+**Briefmanager** erzeugt professionelle Briefe direkt in Nextcloud.
+
+Aus dem WordPress-Plugin `briefpapier-suite` / `te-brief-standalone` portiert und als **universelles Paket** gebaut:
+Organisation, Design-Preset und Logo werden in den Einstellungen konfiguriert, nicht fest verdrahtet.
+
+## Funktionen
+
+- Briefe anlegen, bearbeiten, löschen (Eigentum je Benutzer)
+- Private Familienlayouts (Absender, Logo, Farben, Design) je Nextcloud-Benutzer
+- Varianten / Abteilungen (Briefköpfe)
+- Organisations-Stammdaten (optional; Vereinsbriefe derzeit nicht im Fokus)
+- Design-Presets: Muster, Verein, Familie, Büro (generisch; Logos selbst hochladen)
+- PDF-Erzeugung mit Briefpapier-Layout
+- Internetmarke: manueller PDF-Upload + REST-API (DHL INTERNETMARKE, Preview; Live-Kauf standardmäßig aus)
+- Einschreiben-Rückverfolgung über die öffentliche Deutsche-Post-Suche
+- Sichtbarkeit privat oder Team
+]]></description>
+	<description lang="en"><![CDATA[
+**Briefmanager** creates professional letters inside Nextcloud.
+
+Ported from the WordPress plugin `briefpapier-suite` as a **universal package**:
+organisation, design preset and logo are configured in settings, not hard-coded.
+]]></description>
+	<version>0.9.2</version>
+	<licence>agpl</licence>
+	<author mail="info@toschke.de" homepage="https://www.toschke.de">Toschke e. V. / Briefpapier-Suite</author>
+	<namespace>BriefManager</namespace>
+	<category>office</category>
+	<bugs>https://github.com/Toschke-eV/briefmanager/issues</bugs>
+	<dependencies>
+		<nextcloud min-version="30" max-version="35"/>
+	</dependencies>
+	<navigations>
+		<navigation>
+			<name>Briefe</name>
+			<route>briefmanager.page.index</route>
+			<icon>app.svg</icon>
+			<order>10</order>
+		</navigation>
+	</navigations>
+	<settings>
+		<admin>OCA\BriefManager\Settings\AdminSettings</admin>
+		<admin-section>OCA\BriefManager\Settings\AdminSection</admin-section>
+	</settings>
+</info>
